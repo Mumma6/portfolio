@@ -1,0 +1,288 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background-color: #e5e5e5;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar link {
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar li {
+  font-size: 1.5rem;
+}
+.navbar li:hover {
+  color: #005b1e;
+  cursor: pointer;
+}
+.navbar-toggler-icon-line {
+        width: 36px;
+        height: 4px;
+        margin: 0 0 5px 0;
+        background: #07c146;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.navbar a :hover {
+  color: #00e64d;
+  cursor: pointer;
+}
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+#navbarResponsive {
+  float: right;
+}
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.landing {
+  position: relative;
+  background: url("./img/background.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#home {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 7rem;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  font-size: 2rem;
+}
+
+.icons a:hover {
+  color: #00e64d;
+  transition: all 0.3s ease-out;
+}
+
+.icons {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  padding: 0.3rem 1rem;
+  margin: 3rem;
+  color: white;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(102, 102, 102, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.6;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+
+/* OLD STUFFFFFFf */
+
+.text-primarys {
+  color: #00e64d;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding-top: 0.3rem;
+  padding-right: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+/* Profiles Page */
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Profile Page */
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
+  grid-gap: 1rem;
+}
+
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-top img {
+  width: 250px;
+}
+
+.profile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-exp {
+  grid-area: exp;
+}
+
+.profile-edu {
+  grid-area: edu;
+}
+
+.profile-exp h2,
+.profile-edu h2 {
+  margin-bottom: 1rem;
+}
+
+.profile-exp > div,
+.profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-exp > div:last-child,
+.profile-edu > div:last-child {
+  border: 0;
+}
+
+.profile-exp p,
+.profile-edu p {
+  margin: 0.5rem 0;
+}
+
+.projects {
+  padding-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectsWork {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectsWork img {
+  width: 100%;
+  height: 200px;
+}
+
+.projectswork img:hover {
+  opacity: 0.5;
+  border-color: #00e64d;
+  transition: all 0.3s ease-out;
+}
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #00e64d;
+    color: set-text-color(#00e64d);
+    transition: all 0.3s ease-out; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #e6e6e6;
+  color: #333; }
